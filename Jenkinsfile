@@ -18,6 +18,11 @@ post {
    always {
     echo "sending email"
    }
+
+   changed {
+     echo "Blah blah blah"
+   }
+
  }
- 
+
 }

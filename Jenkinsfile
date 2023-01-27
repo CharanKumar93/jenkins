@@ -40,11 +40,11 @@ pipeline {
 pipeline {
   agent any
   stages {
-    stage('test1') {
+    stage('test') {
       steps {
         script {
-         def abc = "Hello"
-         def xyz = 10
+          def abc = "Hello"
+          def xyz = 10
 
          print "abc  = ${abc}"
          print "xyz  = ${xyz}"

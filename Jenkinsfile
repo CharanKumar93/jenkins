@@ -31,11 +31,24 @@ pipeline {
    always {
     echo "sending email"
    }
-
-   changed {
-     echo "Blah blah blah"
-   }
-
  }
+
+}
+
+@Library('roboshop')_
+
+pipeline {
+  agent any
+  stages {
+    stage('test') {
+      steps {
+        script {
+         test()
+        }
+
+      }
+    }
+
+  }
 
 }

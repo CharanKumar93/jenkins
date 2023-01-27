@@ -40,7 +40,7 @@ pipeline {
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('test1') {
       steps {
         script {
          def abc = "Hello"
